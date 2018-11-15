@@ -39,9 +39,6 @@
     <ClInclude Include="util.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="telemetry.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="dialog_main.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -51,10 +48,7 @@
     <ClInclude Include="dialog_array.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ScrollHelper.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="DialogMessageHook.h">
+    <ClInclude Include="dialog_main_scroll_helper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="routing_params.h">
@@ -66,7 +60,10 @@
     <ClInclude Include="bootstrapper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="licensing.h">
+    <ClInclude Include="SysTray.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="dialog_main_scroll_helper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -97,9 +94,6 @@
     <ClCompile Include="util.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="telemetry.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="dialog_main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -109,10 +103,7 @@
     <ClCompile Include="dialog_array.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ScrollHelper.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="DialogMessageHook.cpp">
+    <ClCompile Include="dialog_main_scroll_helper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="routing_params.cpp">
@@ -124,7 +115,10 @@
     <ClCompile Include="bootstrapper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="licensing.cpp">
+    <ClCompile Include="SysTray.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dialog_main_scroll_helper.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
