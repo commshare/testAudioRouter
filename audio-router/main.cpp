@@ -10,6 +10,7 @@
 
 #pragma comment(lib, "uuid.lib")
 
+//dll和gui之间要统一常量
 // TODO: unify constants and structures between dll and gui
 #define ROUTING_MASK (((DWORD)0x3) << (sizeof(DWORD) * 8 - 2))
 #define SESSION_MASK ((~((DWORD)0)) >> 2)
@@ -23,7 +24,7 @@
       x = NULL;         \
    }
 #endif
-
+//设备id
 struct device_id_t
 {
     LPWSTR device_id_str;
@@ -35,10 +36,12 @@ struct device_id_t
     }
 };
 
+//看起来是一个链表类型？
 typedef duplicate<device_id_t> device_id_duplicate;
 typedef HRESULT (__stdcall *activate_t)(IMMDevice*, REFIID, DWORD, PROPVARIANT*, void**);
 HRESULT __stdcall activate_patch(IMMDevice*, REFIID, DWORD, PROPVARIANT*, void**);
 
+//是否应用明确的路由？
 bool apply_explicit_routing();
 
 patcher<activate_t> patch_activate(activate_patch);

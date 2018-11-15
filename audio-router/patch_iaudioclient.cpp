@@ -5,6 +5,7 @@
 #include <iomanip>
 #include <cassert>
 
+//这个也是一个系统库，是啥库呢？
 #pragma comment(lib, "comsuppw.lib")
 
 #define AUDCLNT_STREAMFLAGS_AUTOCONVERTPCM 0x80000000
